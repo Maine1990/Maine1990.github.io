@@ -145,7 +145,7 @@ h4 {
 
 /*images*/
 .hero-image {
-    background-image: url(images/baked_goods.jpg);
+    background-image: url(Images/baked_goods.jpg);
     background-size: cover;
     background-position: right;
     margin: 0;
@@ -153,7 +153,7 @@ h4 {
     min-height: fit-content;
     }
 #hero-image {
-    background-image: url(images/easter-7109439_1920.jpg);
+    background-image: url(Images/easter-7109439_1920.jpg);
     background-size: cover;
     background-position: right;
     margin: 0;
@@ -161,7 +161,7 @@ h4 {
     min-height: fit-content;
 }
 #hero-image:hover {
-    background-image: url(images/star-of-david-5980481_1920.jpg);
+    background-image: url(Images/star-of-david-5980481_1920.jpg);
     background-size: cover;
     background-position: right;
     margin: 0;
@@ -277,6 +277,15 @@ textarea{
     #about-us, #news {
         margin: 0;
     }
+    #items {
+        align-items: left;
+    }
+    footer {
+        align-items: left;
+    }
+    nav, nav ul {
+        flex-wrap: wrap;
+    }
 }
 @media screen and (min-width:650px) {
     #form {
@@ -289,12 +298,19 @@ textarea{
     }
     footer {
         font-weight: lighter;
+        align-items: center;
     }
     a, .dropdown {
         text-decoration: none;
     }
     #about-us, #news {
         margin: 5em;
+    }
+    #items {
+        align-items: center;
+    }
+    nav, nav ul {
+        align-items: center;
     }
 }
 @media screen and (min-width:800px){
