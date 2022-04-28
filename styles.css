@@ -21,6 +21,9 @@ footer {
 
 /*header*/
 
+header {
+    background-color:#FFE5EC;
+}
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
     font-size: xx-large;
@@ -38,7 +41,6 @@ h1 {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#FFE5EC;
 }
 
 /*texts*/
@@ -51,7 +53,11 @@ a {
     text-align: center;
 }
 a:hover {
-    color: #000000;
+    color: #1E2367;
+}
+h3 {
+    text-align: center;
+    text-shadow: 2px 1px #540826;
 }
 
 /*navigation*/
@@ -62,7 +68,7 @@ nav {
     background-color: #F4A2B5;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    border-style: outset;
+    border-style: none;
     justify-content: center;
 }
 nav ul {
@@ -99,7 +105,7 @@ ul {
     color: #540826;
 }
 .dropdown:hover {
-    color: #000000;
+    color: #1E2367;
 }
 .collapse {
     display: flex;
@@ -122,9 +128,60 @@ button {
 h4 {
     display: none;
 }
+#cookies {
+    background-image: url(Images/cookies.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    color:white;
+
+}
+#cookies:hover {
+    transform: scale(1.05);
+    font-size: larger;
+}
+#cupcakes {
+    background-image: url(Images/cupcakes.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+#cupcakes:hover {
+    transform: scale(1.05);
+    font-size: larger;
+}
+#donuts {
+    background-image: url(Images/donuts.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+#donuts:hover {
+    transform: scale(1.05);
+    font-size: larger;
+}
+#muffins {
+    background-image: url(Images/muffins.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+#muffins:hover {
+    transform: scale(1.05);
+    font-size: larger;
+}
+.link {
+    text-decoration: underline;
+}
 
 /*main*/
 
+main {
+    background-color:#FFE5EC;
+}
 .hero-text {
     color: white;
     text-align: center;
@@ -246,6 +303,7 @@ textarea{
     align-items: stretch;
     border-top: 1px solid;
     background-color: white;
+    font-size: small;
     margin: 0;
     padding: 0;
     }
@@ -266,22 +324,15 @@ textarea{
     }
     p {
         font-size: large;
-        font-weight: bold;
     }
     footer {
-        font-weight: bold;
-    }
-    a, .dropdown {
-        text-decoration: underline;
+        font-size: medium;
     }
     #about-us, #news {
         margin: 0;
     }
     #items {
-        align-items: left;
-    }
-    footer {
-        align-items: left;
+        align-items:flex-start;
     }
     nav, nav ul {
         flex-wrap: wrap;
@@ -289,19 +340,11 @@ textarea{
 }
 @media screen and (min-width:650px) {
     #form {
-        margin-left: 10em;
-        margin-right: 10em;
+        margin-left: 20em;
+        margin-right: 20em;
     }
     p {
         font-size: medium;
-        font-weight: lighter;
-    }
-    footer {
-        font-weight: lighter;
-        align-items: center;
-    }
-    a, .dropdown {
-        text-decoration: none;
     }
     #about-us, #news {
         margin: 5em;
@@ -310,12 +353,15 @@ textarea{
         align-items: center;
     }
     nav, nav ul {
-        align-items: center;
+        flex-wrap: nowrap;
     }
 }
 @media screen and (min-width:800px){
     #form {
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-left: 30em;
+        margin-right: 30em;
+    }
+    footer {
+        font-size: small;
     }
 }
